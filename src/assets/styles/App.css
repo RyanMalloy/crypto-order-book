@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --primary: #30313d;
+  --secondary: #a3acba;
+  --border: #d5dbe1;
+  --border-light: #f0f2f5;
+  --blue: #1677ff;
+  --blue-light: #f0f2ff;
+  --success-light: #e6f4ea;
+  --success: #228403;
+  --success-dark: #1e6e00;
+  --danger: #df1b41;
+  --danger-light: #ffedf0;
+}
+
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 0;
+  padding: 1rem;
+  display: grid;
+  place-items: center;
+}
+
+.text-small {
+  font-size: 12px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.bg-error-light {
+  background-color: var(--danger-light);
+  padding: 0.25rem;
+  border-radius: 0.5rem;
+  color: var(--danger);
+}
+
+.bg-success-light {
+  background-color: var(--success-light);
+  padding: 0.25rem;
+  border-radius: 0.5rem;
+  color: var(--success);
+}
+
+.color-danger {
+  color: var(--danger);
+}
+
+.color-success {
+  color: var(--success);
+}
+
+.text-align-right {
+  text-align: right;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.text-align-left {
+  text-align: left;
+}

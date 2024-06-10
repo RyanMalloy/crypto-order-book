@@ -1,0 +1,107 @@
+.orderbook {
+  border-radius: 1rem;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.orderbook-header {
+  padding: 1rem 1rem 0.25rem 1rem;
+  border: 1px solid var(--border);
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.orderbook-header h3 {
+  color: var(--primary);
+  margin: 0;
+  margin-bottom: 0.5rem;
+}
+
+.orderbook-header-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-between;
+  gap: 1rem;
+  color: var(--secondary);
+}
+
+.orderbook-header-row p {
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+}
+
+.orderbook-body {
+  border: 1px solid var(--border);
+  border-top: none;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+.orderbook-order-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-between;
+  gap: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 0.1rem;
+  padding-bottom: 0.1rem;
+  margin-bottom: 0.25rem;
+  border-radius: .25rem;
+}
+
+.orderbook-order-row:hover {
+  background-color: var(--border-light);
+}
+
+.orderbook-order-row p {
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.orderbook-body-asks,
+.orderbook-body-bids {
+  overflow-y: scroll;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  max-height: calc(50vh - 150px);
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  color: var(--primary);
+}
+
+.orderbook-body-trades {
+  overflow-y: scroll;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  padding-left: 1rem;
+  padding-right: 1rem;
+  color: var(--primary);
+}
+
+.orderbook-body-middle {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  border: 1px solid var(--border);
+  border-left: none;
+  border-right: none;
+}
+
+.orderbook-body-middle p {
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: var(--primary);
+}
