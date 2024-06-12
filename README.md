@@ -1,13 +1,7 @@
-# NASCENT TAKE HOME TEST
+# Crypto Order Book
 
-## Assignment
-Please thoroughly review the provided Assignment requirements PDF for the description.
-
-## Candidate Notes
-The main component library that I used for this project was Ant Design. I also combined this with my own CSS to achieve the desired design I created before development.
-Axios was used to fetch the data from our mock server.
-Redux was used throughout the application in order to share state between components. I found redux to be a great way to fulfill all of the bonus features, such as the trade history and the efficient order placement. 
-The layout of the app provides an easy to use and understand experience. I drew inspiration from the CoinBase orderbook as well as the Trade History. The project is broken up into api, styles, components, slices/stores for a easily maintainable system.
+## Dev Notes
+The main component library that I used for this project was Ant Design. I also combined this with my own CSS to achieve the desired design I created before development. Axios was used to fetch the data from our mock server. Redux was used throughout the application in order to share state between components. The layout of the app provides an easy to use and understand experience. I drew inspiration from the CoinBase orderbook as well as the Trade History. The project is broken up into api, styles, components, slices/stores for a easily maintainable system.
 
 ## About the Template
 

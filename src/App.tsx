@@ -39,7 +39,7 @@ const App = () => {
               maxWidth: "1024px",
             }}
           >
-            <h2>Nascent Assignment</h2>
+            <h2>Crypto Order Book</h2>
             <Select defaultValue={asset} onChange={(value) => setAsset(value)}>
               <Option value="BTC">BTC</Option>
               <Option value="ETH">ETH</Option>

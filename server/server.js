@@ -14,10 +14,7 @@ app.get('/', (req, res) => {
   res.send('Hello World!')
 })
 
-/* Orderbook Endpoint
-Specifying the optional asset parameter will allow getting the orderbook for that asset. The default is always BTC.
-Example: http://localhost:3001/orderbook/ETH
-*/
+/* Orderbook Endpoint*/
 app.get('/orderbook/:asset?', (req, res) => {
     const asset = req.params.asset?.toUpperCase() || "BTC";
     switch(asset) {
@@ -28,15 +25,7 @@ app.get('/orderbook/:asset?', (req, res) => {
     }
 })
 
-/* Orderbook Endpoint
-The trade requires: asset (string), side (BUY/SELL), type (optional: LIMIT/MARKET), quantity (number), price (number), notional (number)
-This endpoint performs simple validation. Returns the submitted order, with a unique id and timestamp of submisison.
-Example:
-  curl --header "Content-Type: application/json" \
-    --request POST \
-    --data '{"asset":"BTC","side":"BUY", "type": "LIMIT", "quantity": 2, "price": 61000, "notional": 122000}' \
-    http://localhost:3001/trade
-*/
+/* Orderbook Endpoint*/
 app.post('/trade/', (req, res) => {
     const order = req.body;
     console.log(req.body)
